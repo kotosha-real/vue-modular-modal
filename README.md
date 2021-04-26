@@ -1,4 +1,4 @@
-# vue-modal-plugin-example
+# Modular Vue modals
 
 Hello!
 
