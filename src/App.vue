@@ -9,13 +9,13 @@
     </header>
 
     <main>
-      <div class="control" @click="$modal.open(signInModalName)">
-        <button>
+      <div class="control">
+        <button @click="$modal.open(signInModalName)">
           Sign in
         </button>
       </div>
-      <div class="control" @click="$modal.open(signUpModalName)">
-        <button>
+      <div class="control">
+        <button @click="$modal.open(signUpModalName)">
           Sign up
         </button>
       </div>
