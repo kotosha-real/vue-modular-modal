@@ -9,13 +9,13 @@
     </header>
 
     <main>
-      <div class="control" @click="isSignInModalOpen = true">
-        <button>
+      <div class="control">
+        <button @click="isSignInModalOpen = true">
           Sign in
         </button>
       </div>
-      <div class="control" @click="isSignUpModalOpen = true">
-        <button>
+      <div class="control">
+        <button @click="isSignUpModalOpen = true">
           Sign up
         </button>
       </div>
