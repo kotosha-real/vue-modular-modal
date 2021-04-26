@@ -9,38 +9,44 @@
     </header>
 
     <main>
-      <div class="control">
+      <div class="control" @click="$modal.open(signInModalName)">
         <button>
           Sign in
         </button>
       </div>
-      <div class="control">
+      <div class="control" @click="$modal.open(signUpModalName)">
         <button>
           Sign up
         </button>
       </div>
     </main>
 
-    <modal v-show="false">
+    <modal :name="signInModalName">
       <sign-in-form />
     </modal>
 
-    <modal v-show="false">
+    <modal :name="signUpModalName">
       <sign-up-form />
     </modal>
   </div>
 </template>
 
 <script>
-import { Modal, SignInForm, SignUpForm } from './components'
+import { SignInForm, SignUpForm } from './components'
 
 export default {
   name: 'App',
 
   components: {
-    Modal,
     SignInForm,
     SignUpForm
+  },
+
+  data() {
+    return {
+      signInModalName: 'sign-in',
+      signUpModalName: 'sign-up'
+    }
   }
 }
 </script>
